@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #1c3628;
+}
+.wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 50.75em;
+    margin: 1em auto;
+
+}
+.container{
+    width: 100%;
+
+}
+.sub-container{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.container input {
+
+    display: block;
+    margin-top: 5%;
+    width: 100;
+    padding: 0.9em 0.9em;
+    border: 1px solid #d0d0d0d0;
+    border-radius: 0.4em;
+    outline: none;
+    color: rgb(10, 10, 10);
+    font-weight: 600;
+    font-size: large;
+}
+     .container input:focus {
+        border-color: rgb(66, 66, 141);
+     }
+     .total-amount-container,
+     .user-expenses {
+        margin: 40%;
+        background-color: #4e4b4b;
+        padding: 1.25em 0.9em;
+        border-radius: 0.3em;
+        box-shadow: 0 0.6em 1.2em rgba(25, 1, 70, 0.06);
+     }
+    .output-container{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #587ef4;
+    color: #ffff;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28,0.8,80,0.06);
+    margin: 0.5em 0;
+    padding: 1.2em;
+}
+   .output-container p{
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+   .output-container span{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: aliceblue;
+}
+.submit{
+    font-size: 1em;
+    margin-top: 1em;
+    background-color: #587ef4;
+    border: none;
+    outline: none;
+    color: #ffff;
+    border-radius: 3em;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+   }
+.hide {
+    display: none;
+}
+.list{
+    background-color: #ffff;
+    padding: 1.8em 1.2em ;
+    box-shadow: 0 0.6em 1.2em rgba(28,0.8,80,0.06);
+    border-radius: 0.6em;
+
+}
+.subList-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .edit{
+    margin-left: 8PX;
+  }
+  .edit,
+  .delete { 
+    background: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+    border: none;
+    color: blueviolet;
+
+  }
+  .expenseinput{
+    margin-bottom: 1em;
+
+  }
+ .expenseamount{
+    margin-bottom: 1em;
+ }
+ .list-container{
+    width: 100% ;
+    margin-top: 1em;
+
+ }
+ 
+ 

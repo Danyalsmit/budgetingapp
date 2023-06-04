@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Budgeting App</title>
+  <link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="sub-container">
+        <!--  Budgeting App -->
+
+        <div class="total-amount-container">
+          <h2>Budgeting App</h2>
+          <p class="hide" id="budgeterror">Value can't be empty or negative</p>
+          <input type="number" id="budget-input" placeholder="Enter budget amount">
+          <button class="submit" id="set-budget-btn">Set Budget</button>
+        </div>
+          <!--  Expenses -->
+
+        <div class="user-expenses">
+          <h2>Expenses</h2>
+          <input type="text" class="expenseinput" id="expense-input" placeholder="Enter expense name">
+          <input type="number" class="expenseamount" id="amount-expense" placeholder="Enter expense amount">
+          <input type="date" class="expensedate" id="expense-date" placeholder="Enter date">
+          <button class="submit" id="addexpense-btn">Add Expense</button>
+        </div>
+      </div>
+      <!--  output-container -->
+
+      <div class="output-container">
+        <div>
+          <p>Total budget</p>
+          <span id="amount">0</span>
+        </div>
+        <div>
+          <p>Expense</p>
+          <span id="expense-amount">0</span>
+        </div>
+        <div>
+          <p>Balance</p>
+          <span id="balance-amount">0</span>
+        </div> 
+      </div>
+    </div>
+    
+    <!--  list -->
+  
+    <div class="list">
+      <h2>Expense List</h2>
+      <div class="list-container" id="list">
+      </div>
+    </div>
+  </div>  
+  <script src="script.js" defer></script>
+</body>
+</html>
